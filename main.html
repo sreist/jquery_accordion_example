@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Test jQuery UI Accordion - Default functionality</title>
+        <link rel="stylesheet" href="jquery-ui.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="jquery-1.12.4.min.js"></script>
+        <script src="jquery-ui.min.js"></script>
+        <script>
+          $( function() {
+    $( "#accordion" ).accordion({
+        collapsible: true,
+        heightStyle: "content",
+        active: false
+    });
+  } );
+  </script>
+</head>
+
+<body>
+
+<h1>This is the Questions & Answers page</h1>
+
+<div id="accordion">
+  <h3>Question 1</h3>
+  <div>
+    <p>
+        something something something ...
+    </p>
+  </div>
+  <h3>Question 2</h3>
+  <div>
+    <p>
+        we can do lists too ...
+    </p>
+    <ul>
+      <li>List item one</li>
+      <li>List item two</li>
+      <li>List item three</li>
+    </ul>
+  </div>
+   <h3>Question 3</h3>
+  <div>
+    <p>
+        another something something something with a picture ...
+    </p>
+        <img src="pic_mountain.jpg">
+  </div>
+</div>
+
+
+</body>
+</html>
